@@ -1,0 +1,5 @@
+{
+"realms": [
+	{"name":"Ashenvale","slug":"ashenvale"}],
+"auctions": []
+}

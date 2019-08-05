@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auctioneer</title>
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/png">
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col l12">
+            <h3>Проверка цен аукциона WoW</h3>
+        </div>
+        <div class="col l3 m4">
+            <h5>Обновить данные БД</h5>
+        </div>
+        <div class="col l1 m2">
+            <button class="btn" id="step1">Шаг1</button>
+        </div>
+        <div class="col l1 m2">
+            <button class="btn" id="step2">Шаг2</button>
+        </div>
+        <div class="col l1 m2">
+            <button class="btn" id="step3">Шаг3</button>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="row">
+        <h3>Добавить рецепт на сервер</h3>
+        <a id="addInputRec" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+        <a id="delInputRec" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">cancel</i></a>
+
+        <form id="form" class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input name="nameRec" id="nameRec" type="text" class="validate">
+                    <label for="nameRec">Название рецепта</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input name="idRec" id="idRec" type="text" class="validate">
+                    <label for="idRec">Id рецепта</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <select name="profession" class="browser-default">
+                        <option value="alchemy" selected>Алхимия</option>
+                        <option value="engineer">Инженерное дело</option>
+                        <option value="enchantment">Наложение чар</option>
+                        <option value="blacksmithing">Кузнечное дело</option>
+                        <option value="jewelcrafting">Ювелирное дело</option>
+                        <option value="tailoring">Портняжное дело</option>
+                        <option value="leatherworking">Кожевничество</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input name="item0" id="item0" type="text" class="validate">
+                    <label for="item0">Item0</label>
+                </div>
+            </div>
+        </form>
+        <button type="submit" id="sendBtn" class="btn">Отправить</button>
+
+
+    </div>
+
+
+</div>
+</body>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="src/auth.js"></script>
+<script src="src/data.js"></script>
+<script src="src/addRecipes.js"></script>
+</html>
+
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auctioneer</title>
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/png">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<body>
+    <div id="preloader" style="position: absolute; height: 100vh; width: 100vw; background-color: grey; z-index: 999; opacity: 0.9">
+        <h2 style="text-align: center; margin-top: 20%">Идет загрузка данных</h2>
+        <div class="progress">
+            <div class="indeterminate"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col l12">
+                <h3>Проверка цен аукциона WoW</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l12">
+                <h5>Проверка рецептов реалм: Ясеневый лес</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l2 m3">
+                <select id="prof" name="prof" class="browser-default">
+                    <option value="alchemy" selected>Алхимия</option>
+                    <option value="engineer">Инженерное дело</option>
+                    <option value="enchantment">Наложение чар</option>
+                    <option value="blacksmithing">Кузнечное дело</option>
+                    <option value="jewelcrafting">Ювелирное дело</option>
+                    <option value="tailoring">Портняжное дело</option>
+                    <option value="leatherworking">Кожевничество</option>
+                </select>
+            </div>
+
+            <div class="col l1 m2">
+                <button class="btn" id="testRecipes">Проверить</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>Дата данных аукциона: <span id="dataDump"></span></p>
+        </div>
+
+        <div id="aucData" class="row"></div>
+
+    </div>
+</body>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="src/auth.js"></script>
+<script src="src/data.js"></script>
+<script src="src/addRecipes.js"></script>
+</html>
+
+
+
