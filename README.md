@@ -9,3 +9,5 @@
 Необходимо указать конфигурацию в файлах config.php && auth.js (подключение к БД и ключи от Blizzard)
 
 Linux: sudo docker-compose up
+
+Работает по адресу localhost:8000
